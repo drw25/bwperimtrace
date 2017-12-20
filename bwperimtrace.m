@@ -13,10 +13,10 @@ function cellout = bwperimtrace(in,xlims,ylims)
 % University of Oxford
 
 if ~exist('xlims','var')
-    xlims = 1:size(in,1);
+    xlims = [1 size(in,2)];
 end
 if ~exist('ylims','var')
-    ylims = 1:size(in,2);
+    ylims = [1 size(in,1)];
 end
 
 if all(~in)
